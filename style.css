@@ -24,14 +24,14 @@ body {
     background-image: url("https://source.unsplash.com/1600x900/?landscape");
     font-size: 130%;
 }
-body::before {
+/* body::before {
     content: "";
     position: absolute;
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.3);
     z-index: -1;
-}
+} */
 .container {
     height: 100vh;
     display: flex;
@@ -99,4 +99,15 @@ body::before {
     left: 20px;
 }
 
-  
+@media only screen and (max-width: 500px) {
+    body {
+        font-size: 100%;
+    }
+    .m-heading {
+        font-size: 26px;
+    }
+    .l-heading {
+        font-size: 36px;
+        margin: 18px 0;
+    }
+}
