@@ -15,7 +15,7 @@ class UI {
         this.humidity.textContent = `Humidity: ${data.main.humidity}%`;
         this.wind.textContent = `Wind Speed: ${data.wind.speed} m/s`;
         document.querySelector('.weather').classList.remove("loading")
-        document.body.style.backgroundImage = `url("https://source.unsplash.com/1600x900/?${data.name}")`
+        document.body.style.backgroundImage = `url("https://source.unsplash.com/1600x900/?${data.weather[0].description}")`
     }
     
 } 
